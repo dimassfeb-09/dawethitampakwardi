@@ -101,6 +101,8 @@ export const Header = () => {
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-palm-sugar/20 text-palm-sugar transition-colors hover:bg-palm-sugar/10 md:hidden"
+                aria-label={isMobileMenuOpen ? "Close Menu" : "Open Menu"}
+                aria-expanded={isMobileMenuOpen}
               >
                 {isMobileMenuOpen ? <X size={22} /> : <MenuIcon size={22} />}
               </button>

@@ -60,7 +60,7 @@ export const Menu = () => {
                 />
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-palm-sugar mb-2">{item.title}</h4>
+                <h3 className="text-xl font-bold text-palm-sugar mb-2">{item.title}</h3>
                 <p className="text-sm text-slate-500 mb-6">{item.description}</p>
                 <a
                   href={item.link}

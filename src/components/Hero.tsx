@@ -62,6 +62,9 @@ export const Hero = () => {
                 src="/assets/hero-header.png"
                 alt="Dawet Hitam Pak Wardi Bekasi - Segarnya Dawet Tradisional Asli Bekasi"
                 className="h-full w-full object-cover"
+                fetchPriority="high"
+                loading="eager"
+                decoding="async"
               />
             </div>
           </motion.div>

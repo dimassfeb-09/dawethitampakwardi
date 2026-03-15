@@ -23,7 +23,7 @@ export const Footer = () => {
             </p>
           </div>
           <div>
-            <h4 className="text-white font-bold mb-6">{t.footer.quickLinks}</h4>
+            <h3 className="text-white font-bold mb-6">{t.footer.quickLinks}</h3>
             <ul className="flex flex-col gap-4 text-sm">
               <li>
                 <a className="hover:text-primary transition-colors" href="#menu">{t.header.menu}</a>
@@ -51,7 +51,7 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-bold mb-6">{t.footer.information}</h4>
+            <h3 className="text-white font-bold mb-6">{t.footer.information}</h3>
             <ul className="flex flex-col gap-4 text-sm text-slate-300">
               <li>{t.location.hours}</li>
               <li>{t.location.address}</li>

@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2bee2b;
+  --color-primary: #1eb81e; /* Slightly darker for better contrast */
+  --color-primary-light: #2bee2b; /* Original vibrant color for decorative elements */
   --color-background-light: #fdfcfb;
   --color-background-dark: #102210;
   --color-palm-sugar: #5d4037;
   --color-coconut-cream: #fffef0;
-  --color-pandan-green: #2d5a27;
+  --color-pandan-green: #234d1e; /* Darker variant for text accessibility */
 
   --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 
