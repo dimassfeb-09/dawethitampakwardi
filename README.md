@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# Dawet Hitam Pak Wardi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance, and multilingual landing page for **Dawet Hitam Pak Wardi**, a traditional Indonesian beverage business. Built with a focus on visual excellence, smooth interactions, and SEO optimization.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Multilingual Support**: Seamlessly switch between Indonesian and English.
+- **Modern UI/UX**: Premium design using Tailwind CSS 4 and smooth animations with Framer Motion.
+- **Interactive Menu**: Explore the variety of Dawet offerings with a rich visual interface.
+- **Easy Ordering**: Integrated "How to Order" section for customer convenience.
+- **Location Mapping**: Easy access to the physical store location.
+- **SEO Optimized**: Meta tags and structured data for better search engine visibility.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: React 19
+- **Build Tool**: Vite 6
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Package Manager**: Bun
 
-## Expanding the ESLint configuration
+## Installation & Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Follow these steps to get the project running locally:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 1. Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Ensure you have [Bun](https://bun.sh/) installed on your system.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/dimassfeb-09/dawethitampakwardi.git
+cd dawethitampakwardi
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+bun install
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 4. Run Development Server
+
+```bash
+bun dev
+```
+
+The application will be available at `http://localhost:5173`.
+
+## Building for Production
+
+To create an optimized production build:
+
+```bash
+bun run build
+```
+
+The output will be generated in the `dist/` directory. You can preview the production build locally using:
+
+```bash
+bun run preview
+```
+
+## Linting
+
+To run the linter and check for code quality issues:
+
+```bash
+bun run lint
 ```
