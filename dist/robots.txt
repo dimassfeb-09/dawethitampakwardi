@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dawetbekasipakwardi.vercel.app/sitemap.xml
